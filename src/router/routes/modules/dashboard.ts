@@ -13,11 +13,11 @@ const DASHBOARD: AppRouteRecordRaw = {
   },
   children: [
     {
-      path: 'workplace',
-      name: 'Workplace',
-      component: () => import('@/views/dashboard/workplace/index.vue'),
+      path: 'docsConvert',
+      name: 'DocsConvert',
+      component: () => import('@/views/dashboard/docs-convert/index.vue'),
       meta: {
-        locale: 'menu.dashboard.workplace',
+        locale: 'menu.dashboard.docsConvert',
         requiresAuth: true,
         roles: ['*'],
       },

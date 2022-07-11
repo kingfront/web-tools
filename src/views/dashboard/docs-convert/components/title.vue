@@ -1,8 +1,8 @@
 <template>
-  <a-col class="banner">
+  <a-col class="title">
     <a-col :span="8">
       <a-typography-title :heading="5" style="margin-top: 0">
-        {{ $t('workplace.welcome') }} {{ userInfo.name }}
+        {{ $t('docsConvert.pdfWord') }}
       </a-typography-title>
     </a-col>
     <a-divider class="panel-border" />
@@ -10,19 +10,20 @@
 </template>
 
 <script lang="ts" setup>
-  import { computed } from 'vue';
-  import { useUserStore } from '@/store';
+  import { PropType } from 'vue';
 
-  const userStore = useUserStore();
-  const userInfo = computed(() => {
-    return {
-      name: userStore.name,
-    };
+  defineProps({
+    title: {
+      type: String as PropType<string>,
+      default() {
+        return '';
+      },
+    },
   });
 </script>
 
 <style scoped lang="less">
-  .banner {
+  .title {
     width: 100%;
     padding: 20px 20px 0 20px;
     background-color: var(--color-bg-2);

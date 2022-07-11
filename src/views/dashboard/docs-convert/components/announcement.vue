@@ -23,28 +23,18 @@
   const list = [
     {
       type: 'orangered',
-      label: '活动',
-      content: '内容最新优惠活动',
+      label: '消息',
+      content: '新增Pdf转换为Word功能',
     },
     {
       type: 'cyan',
       label: '消息',
-      content: '新增内容尚未通过审核，详情请点击查看。',
+      content: 'Word转换为Pdf功能即将上线...',
     },
     {
       type: 'blue',
-      label: '通知',
-      content: '当前产品试用期即将结束，如需续费请点击查看。',
-    },
-    {
-      type: 'blue',
-      label: '通知',
-      content: '1月新系统升级计划通知',
-    },
-    {
-      type: 'cyan',
-      label: '消息',
-      content: '新增内容已经通过审核，详情请点击查看。',
+      label: '周知',
+      content: '本产品永久免费！',
     },
   ];
 </script>
@@ -56,15 +46,16 @@
     width: 100%;
     height: 24px;
     margin-bottom: 4px;
+
     .item-content {
       flex: 1;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
       margin-left: 4px;
+      overflow: hidden;
       color: var(--color-text-2);
-      text-decoration: none;
       font-size: 13px;
+      white-space: nowrap;
+      text-decoration: none;
+      text-overflow: ellipsis;
       cursor: pointer;
     }
   }
