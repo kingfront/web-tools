@@ -1,13 +1,13 @@
 <template>
   <div class="container">
-    <div class="logo">
+    <!-- <div class="logo">
       <img
         alt="logo"
         src="//p3-armor.byteimg.com/tos-cn-i-49unhts6dw/dfdba5317c0c20ce20e64fac803d52bc.svg~tplv-49unhts6dw-image.image"
       />
-      <div class="logo-text">Arco Design Pro</div>
-    </div>
-    <LoginBanner />
+      <div class="logo-text">web-tools</div>
+    </div> -->
+    <!-- <LoginBanner /> -->
     <div class="content">
       <div class="content-inner">
         <LoginForm />
@@ -21,14 +21,15 @@
 
 <script lang="ts" setup>
   import Footer from '@/components/footer/index.vue';
-  import LoginBanner from './components/banner.vue';
   import LoginForm from './components/login-form.vue';
+
 </script>
 
 <style lang="less" scoped>
   .container {
     display: flex;
     height: 100vh;
+    background: linear-gradient(163.85deg, #83acff 0%, #ebebeb 100%);
 
     .banner {
       width: 550px;
