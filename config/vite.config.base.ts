@@ -9,6 +9,7 @@ export default defineConfig({
   build: {
     outDir: 'web-tools',
   },
+  base: 'web-tools',
   resolve: {
     alias: [
       {
