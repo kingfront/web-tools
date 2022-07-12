@@ -6,6 +6,9 @@ import svgLoader from 'vite-svg-loader';
 
 export default defineConfig({
   plugins: [vue(), vueJsx(), svgLoader({ svgoConfig: {} })],
+  build: {
+    outDir: 'web-tools',
+  },
   resolve: {
     alias: [
       {
